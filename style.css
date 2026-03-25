@@ -1,0 +1,83 @@
+ body {
+  background: #1e293b;
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+/* container */
+ .todo-container {
+  background: #0f172a;
+  padding: 20px;
+  border-radius: 12px;
+  width: 350px;
+}
+
+/* input wrapper */
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+#task-input {
+  width: 100%;
+  padding: 15px;
+  padding-right: 55px;
+  border-radius: 8px;
+  border: none;
+  background: #1e293b; /* BLACK/DARK INPUT */
+  color: white;
+  box-sizing: border-box;
+}
+
+/* + button inside input */
+#add-btn {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  width: 40px;
+  border: none;
+  background: #38bdf8;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* list */
+ ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #334155;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* text span */
+.text {
+  flex: 1;
+  margin-left: 10px;
+}
+
+/* FIX: line only when completed */
+.completed .text {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* delete button */
+.delete {
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
